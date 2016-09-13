@@ -20,7 +20,7 @@ int main(){
     case WAY_ONE:
       if(sensor_values[FRONT_LEFT] ^ sensor_values[FRONT_RIGHT])
         front_sens_difference = sensor_values[FRONT_LEFT] - sensor_values[FRONT_RIGHT];
-  		break;
+      break;
   	case WAY_TWO:
       (sensor_values[FRONT_LEFT] ^ sensor_values[FRONT_RIGHT]) ? (front_sens_difference = sensor_values[FRONT_LEFT] - sensor_values[FRONT_RIGHT]) : (front_sens_difference = 0);
       break;
